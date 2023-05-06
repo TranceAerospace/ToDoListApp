@@ -31,6 +31,7 @@
 		9F374F2C2A027AA700843907 /* RegisterViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F374F2B2A027AA700843907 /* RegisterViewVM.swift */; };
 		9F374F2E2A027AB600843907 /* ToDoListItemViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F374F2D2A027AB600843907 /* ToDoListItemViewVM.swift */; };
 		9F374F302A027CEE00843907 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F374F2F2A027CEE00843907 /* HeaderView.swift */; };
+		9FB4D9342A05BD9E004E903F /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4D9332A05BD9E004E903F /* TLButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		9F374F2B2A027AA700843907 /* RegisterViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewVM.swift; sourceTree = "<group>"; };
 		9F374F2D2A027AB600843907 /* ToDoListItemViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewVM.swift; sourceTree = "<group>"; };
 		9F374F2F2A027CEE00843907 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		9FB4D9332A05BD9E004E903F /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				9F374F192A0279EA00843907 /* RegisterView.swift */,
 				9F374F1B2A027A0D00843907 /* ToDoListItemView.swift */,
 				9F374F2F2A027CEE00843907 /* HeaderView.swift */,
+				9FB4D9332A05BD9E004E903F /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				9F374F222A027A6C00843907 /* MainViewViewModel.swift in Sources */,
 				9F374F142A0279CE00843907 /* ToDoListView.swift in Sources */,
 				9F374F1A2A0279EA00843907 /* RegisterView.swift in Sources */,
+				9FB4D9342A05BD9E004E903F /* TLButton.swift in Sources */,
 				9F374F242A027A7F00843907 /* ProfileViewVM.swift in Sources */,
 				9F374F122A0279B500843907 /* ProfileView.swift in Sources */,
 				9F374F1E2A027A4300843907 /* User.swift in Sources */,
