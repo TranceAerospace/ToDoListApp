@@ -14,7 +14,7 @@ struct MainView: View {
         VStack {
             if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
                 // signed In
-                ToDoListView()
+                accountView
             } else {
                 LogInView()
             }
@@ -22,6 +22,20 @@ struct MainView: View {
             
         }
         
+    }
+    @ViewBuilder
+    var accountView: some View {
+        TabView {
+            ToDoListView(userId: viewModel.currentUserId)
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person.circle")
+                }
+        }
     }
 }
 

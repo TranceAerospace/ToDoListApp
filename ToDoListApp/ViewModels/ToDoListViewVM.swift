@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+/// ViewModel for list of items view
+/// Primary Tab
+class ToDoListViewVM: ObservableObject {
+    @Published var showingNewItemView = false
+    
+    init() {}
+}
