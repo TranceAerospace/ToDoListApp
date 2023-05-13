@@ -9,13 +9,14 @@ import SwiftUI
 import FirebaseFirestoreSwift
 
 struct ToDoListView: View {
-    @StateObject var viewModel = ToDoListViewVM()
+    @StateObject var viewModel: ToDoListViewVM
     @FirestoreQuery var items: [ToDoListItem]
     
     
     init(userId: String) {
         // users/<id>/todos/<entries>
         self._items = FirestoreQuery(collectionPath: "users/\(userId)/todos")
+        self._viewModel = StateObject(wrappedValue: ToDoListViewVM(userId: userId))
     }
     
     var body: some View {
@@ -27,6 +28,7 @@ struct ToDoListView: View {
                             Button("Delete") {
                                 viewModel.delete(id: item.id)
                             }
+                            .tint(.red)
                         }
                 }
                 .listStyle(.plain)
