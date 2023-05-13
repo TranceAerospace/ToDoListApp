@@ -11,4 +11,8 @@ import Foundation
 
 class ToDoListItemViewVM: ObservableObject {
     init() {}
+    
+    func toggleIsDone(item: ToDoListItem) {
+        
+    }
 }
